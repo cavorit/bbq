@@ -1,0 +1,41 @@
+VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Mar 29 2017 21:14:16)
+Inklusive der Korrekturen: 1-488, 576
+Extra patches: 8.0.0378, 8.0.0377, 8.0.0322, 8.0.0056
+Verändert von pkg-vim-maintainers@lists.alioth.debian.org
+Übersetzt von buildd@
+Riesige Version ohne GUI. Ein- (+) oder ausschließlich (-) der Eigenschaften:
++acl             +farsi           +mouse_netterm   +syntax
++arabic          +file_in_path    +mouse_sgr       +tag_binary
++autocmd         +find_in_path    -mouse_sysmouse  +tag_old_static
+-balloon_eval    +float           +mouse_urxvt     -tag_any_white
+-browse          +folding         +mouse_xterm     +tcl
+++builtin_terms  -footer          +multi_byte      +terminfo
++byte_offset     +fork()          +multi_lang      +termresponse
++cindent         +gettext         -mzscheme        +textobjects
+-clientserver    -hangul_input    +netbeans_intg   +title
+-clipboard       +iconv           +path_extra      -toolbar
++cmdline_compl   +insert_expand   +perl            +user_commands
++cmdline_hist    +jumplist        +persistent_undo +vertsplit
++cmdline_info    +keymap          +postscript      +virtualedit
++comments        +langmap         +printer         +visual
++conceal         +libcall         +profile         +visualextra
++cryptv          +linebreak       +python          +viminfo
++cscope          +lispindent      -python3         +vreplace
++cursorbind      +listcmds        +quickfix        +wildignore
++cursorshape     +localmap        +reltime         +wildmenu
++dialog_con      +lua             +rightleft       +windows
++diff            +menu            +ruby            +writebackup
++digraphs        +mksession       +scrollbind      -X11
+-dnd             +modify_fname    +signs           -xfontset
+-ebcdic          +mouse           +smartindent     -xim
++emacs_tags      -mouseshape      -sniff           -xsmp
++eval            +mouse_dec       +startuptime     -xterm_clipboard
++ex_extra        +mouse_gpm       +statusline      -xterm_save
++extra_search    -mouse_jsbterm   -sun_workshop    -xpm
+          System-vimrc-Datei: "$VIM/vimrc"
+        Benutzer-vimrc-Datei: "$HOME/.vimrc"
+ zweite Benutzer-vimrc-Datei: "~/.vim/vimrc"
+         Benutzer-exrc-Datei: "$HOME/.exrc"
+     Voreinstellung für $VIM: "/usr/share/vim"
+Übersetzt: gcc -c -I. -Iproto -DHAVE_CONFIG_H     -g -O2 -fPIE -fstack-protector-strong -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1     -I/usr/include/tcl8.6  -D_REENTRANT=1  -D_THREAD_SAFE=1  -D_LARGEFILE64_SOURCE=1  
+Linken: gcc   -L. -Wl,-z,relro -L/build/ruby2.1-_YpXpM/ruby2.1-2.1.5/debian/lib -fstack-protector -rdynamic -Wl,-export-dynamic -Wl,-E  -fPIE -pie -Wl,-z,relro -Wl,-z,now -Wl,--as-needed -o vim        -lm -ltinfo -lnsl  -lselinux  -lacl -lattr -lgpm -ldl  -L/usr/lib -llua5.2 -Wl,-E  -fstack-protector -L/usr/local/lib  -L/usr/lib/i386-linux-gnu/perl/5.20/CORE -lperl -ldl -lm -lpthread -lcrypt -L/usr/lib/python2.7/config-i386-linux-gnu -lpython2.7 -lpthread -ldl -lutil -lm -Xlinker -export-dynamic -Wl,-O1 -Wl,-Bsymbolic-functions  -L/usr/lib/i386-linux-gnu -ltcl8.6 -ldl -lz -lpthread -lieee -lm -lruby-2.1 -lpthread -lgmp -ldl -lcrypt -lm    

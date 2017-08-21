@@ -26,8 +26,9 @@ filetype plugin indent on    " required
 " Und jetzt kommt mein eigenes Zeug.
 set number
 syntax on
+set encoding=utf-8
 
-" To add the proper PEP8 indentation, add the following to your .vimrc:
+" Code Indentation Python - To add the proper PEP8 indentation, add the following to your .vimrc:
 au BufNewFile,BufRead *.py
     \ set tabstop=4 |
     \ set softtabstop=4 |
