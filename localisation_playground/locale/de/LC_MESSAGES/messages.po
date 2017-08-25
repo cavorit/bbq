@@ -1,0 +1,21 @@
+# Hello World ins deutsche lokalisieren 
+# Copyright (C) YEAR ORGANIZATION
+# HF harald.fiedler@cavorit.com, 2017
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.001 \n"
+"POT-Creation-Date: 2017-08-25 09:57+CEST\n"
+"PO-Revision-Date: 2017-08-25 10:00+CEST\n"
+"Last-Translator: Harald Fiedler <harald.fiedler@cavorit.de>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: utf-8\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: helloHallo.py:15
+msgid "Hello World!"
+msgstr "Hallo Welt..."
+

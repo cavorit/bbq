@@ -1,0 +1,21 @@
+### Localisierung einführen ###
+ 
+(1.) Ersetze alle Strings der Form '...' durch _('...'). Das Programm kann nun vorerst nicht mehr ausgeführt werden, weil die Funktion _(.) erst in Schritt 6 beigebracht wird. 
+(2.) pygettext <dateiname.py> erstellt die editierbare Datei messages.pot
+(3.) Speichere die editierte Funktion als messages.po (ohne das t hinten)
+(4.) Konvertiere die .po Datei in eine .mo Datei mit Hilfe des Befehls msgfmt. Ignoriere das Motzen über CHARSET oder ersetze CHARSET in .po durch 'utf-8'.
+(5.) Lege die folgende Verzeichnisstruktur an:
+
+.
+├── helloHallo.py
+├── locale
+│   └── de
+│       └── LC_MESSAGES
+│           ├── messages.mo
+│           ├── messages.po
+│           └── messages.pot
+└── TUTORIAL
+
+(6.) 
+
+3 directories, 5 files
