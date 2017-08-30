@@ -1,0 +1,9 @@
+{
+    "Mailadresse" : "crm.cavorit@gmail.com",
+    "POP_Server" : "pop.gmail.com",
+    "POP_Username" : "CRM Cavorit",
+    "POP_Passwort" : "oberta..",
+    "SMTP_Server" : "smtp.gmail.com",
+    "SMTP_Username" : "CRM Cavorit",
+    "SMTP_Passwort" : "oberta.."
+}
