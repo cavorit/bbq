@@ -1,0 +1,23 @@
+:YcmDebugInfo on bbq-Rechner
+
+Printing YouCompleteMe debug information...
+-- Client logfile: /tmp/ycm_n_pReL.log
+-- Server Python interpreter: /usr/bin/python
+-- Server Python version: 2.7.9
+-- Server has Clang support compiled in: False
+-- Clang version: None
+-- No extra configuration file found
+-- Python completer debug information:
+--   JediHTTP running at: http://127.0.0.1:40252
+--   JediHTTP process ID: 2721
+--   JediHTTP executable: /home/teilnehmer/.vim/bundle/YouCompleteMe/third_party/ycmd/third_party/JediHTTP/jedihttp.py
+--   JediHTTP logfiles:
+--     /tmp/jedihttp_40252_stdout_Ze01ef.log
+--     /tmp/jedihttp_40252_stderr_KlIdtu.log
+--   Python interpreter: /usr/bin/python
+-- Server running at: http://127.0.0.1:57695
+-- Server process ID: 2680
+-- Server logfiles:
+--   /tmp/ycmd_57695_stdout_RjVO8b.log
+--   /tmp/ycmd_57695_stderr_x2AOYY.log
+
