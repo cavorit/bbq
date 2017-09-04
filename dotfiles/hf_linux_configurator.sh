@@ -35,7 +35,7 @@ sudo update-alternatives --set vi /usr/bin/vim
 
 vim --version
 cp vimrc.default ~/.vimrc
-
+cp tmux.conf.default ~/.tmux.conf  
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 echo "Bitte vim starten mit test.py und :PluginInstall ausführen"
