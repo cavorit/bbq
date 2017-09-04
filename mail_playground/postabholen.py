@@ -15,11 +15,11 @@ with open(configfilename, encoding='utf-8') as appsettings:
 if __debug__:
     print(appsettings)
 
-server = poplib.POP3_SSL(appsettings['POP_Server'])
+server = poplib.POP3_SSL(appsettings['POP_Server'], port=995) # port 995 google
 print(server.getwelcome())
 print(server.user(appsettings['POP_Username']))
-pwd = input("password: ")
-print(server.pass_(pwd)) 
+#pwd = input("password: ")
+print(server.pass_(appsettings['POP_Passwort'])) 
 print(server.quit())        
 
 
