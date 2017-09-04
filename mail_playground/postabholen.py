@@ -15,11 +15,12 @@ with open(configfilename, encoding='utf-8') as appsettings:
 if __debug__:
     print(appsettings)
 
-server = poplib.POP3_SSL(appsettings['POP_Server'], port=995) # port 995 google
+server = poplib.POP3_SSL(appsettings['POP_Server'], port='995') # port 995 google
 print(server.getwelcome())
-print(server.user(appsettings['POP_Username']))
+# print(server.user(appsettings['POP_Username'])) gmail takes Mailadress instead of POP_Username
+print(server.user(appsettings['Mailadresse']))
 #pwd = input("password: ")
-print(server.pass_(appsettings['POP_Passwort'])) 
+print(server.pass_(appsettings['POP_Passwort'])) # gmail need either oauth-registration and authentification, or the mail account settings must enable lower security apps enable 
 print(server.quit())        
 
 
