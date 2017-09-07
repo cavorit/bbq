@@ -1,0 +1,25 @@
+Primzahlnberechnung mit Modul threading umsetzen, derart das folgendes Dictionary rauskommt:
+
+{
+737373737373737 : "in Arbeit",
+5672435793 : "3 * 1890811931",
+909091 : "prim",
+10000000000037 : "in Arbeit",
+5643257 : "23 * 245359"
+}
+
+
+
+Aufgabe
+• Um eine Eingabe 'status' erweitern, welche den aktuellen
+Stand aller Berechnungen ausgibt
+Aufbau
+-------- Aktueller Status --------
+5643257 = 5643257 * 245359
+909091 = prim
+737373737373737 = in Arbeit
+10000000000037 = in Arbeit
+56547 = 56547 * 18849
+----------------------------------
+
+
