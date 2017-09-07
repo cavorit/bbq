@@ -1,0 +1,9 @@
+Aufgabe
+• Vorhergehende Aufgabe um die Nutzung von
+Worker-Threads und Queues erweitern
+- import threading
+- import queue
+
+Im Beispiel vom Hauptprogramm soll die 'put'
+Methode benutzt werden, um neue Zahlen in den
+»Briefkasten« (Warteschlange) zu werfen
