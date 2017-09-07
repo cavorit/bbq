@@ -3,12 +3,13 @@ def primfaktorzerlegung(n):
     
     Rest = n
     Primfaktoren = []
-    for i in range(1,n+1):
+    for i in range(2,n):
         if Rest % i: # teilerfremd
             continue
         else:
             Primfaktoren.append(i)
             Rest = Rest / i
-
+    if not Primfaktoren:
+        Primfaktoren = 'prim'
     return(Primfaktoren)
 
