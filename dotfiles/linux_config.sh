@@ -39,5 +39,8 @@ cp vimrc.default ~/.vimrc
 cp tmux.conf.default ~/.tmux.conf
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
+cp tmux.conf.defaul ~/.tmux.conf
+cp vimrc.default ~/.vimrc
+
 echo "Bitte vim starten mit test.py und :PluginInstall ausführen"
 echo "vim wurde für YouCompleteMe mit /usr/lib/python3.5 kompiliert"
