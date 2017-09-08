@@ -21,6 +21,7 @@ print(server.getwelcome())
 print(server.user(appsettings['Mailadresse']))
 #pwd = input("password: ")
 print(server.pass_(appsettings['POP_Passwort'])) # gmail need either oauth-registration and authentification, or the mail account settings must enable lower security apps enable 
+print('Es liegen ' + str(len(server.list())) + ' neue Nachrichten herum.')
 print(server.quit())        
 
 
