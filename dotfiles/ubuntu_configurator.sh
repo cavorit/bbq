@@ -2,9 +2,9 @@
 apt install tmux, tree
 
 apt install libncurses5-dev libgnome2-dev libgnomeui-dev
-apt libgtk2.0-dev libatk1.0-dev libbonoboui2-dev
-apt libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev
-apt python3-dev ruby-dev lua5.1 lua5.1-dev libperl-dev git
+apt install libgtk2.0-dev libatk1.0-dev libbonoboui2-dev
+apt install libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev
+apt install python3-dev ruby-dev lua5.1 lua5.1-dev libperl-dev git
 
 apt remove vim vim-runtime gvim
 apt remove vim-tiny vim-common vim-gui-common vim-nox
@@ -35,12 +35,11 @@ update-alternatives --set editor /usr/bin/vim
 update-alternatives --install /usr/bin/vi vi /usr/bin/vim 1
 update-alternatives --set vi /usr/bin/vim
 
-cp vimrc.default ~/.vimrc
-cp tmux.conf.default ~/.tmux.conf
+cp ~/bbq/dotfiles/vimrc.default ~/.vimrc
+cp ~/bbq/dotfiles/tmux.conf.default ~/.tmux.conf
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-
-cp tmux.conf.defaul ~/.tmux.conf
-cp vimrc.default ~/.vimrc
 
 echo "Bitte vim starten mit test.py und :PluginInstall ausführen"
 echo "vim wurde für YouCompleteMe mit /usr/lib/python3.5 kompiliert"
+echo "Dieses Script musste mit sudo gestartet werden"
+
