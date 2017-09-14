@@ -30,15 +30,12 @@ make VIMRUNTIMEDIR=/usr/local/share/vim/vim80
 cd ~/vim
 make install
 
-update-alternatives --install /usr/bin/editor editor /usr/bin/vim 1
-update-alternatives --set editor /usr/bin/vim
-update-alternatives --install /usr/bin/vi vi /usr/bin/vim 1
-update-alternatives --set vi /usr/bin/vim
-
 cp ~/bbq/dotfiles/vimrc.default ~/.vimrc
 cp ~/bbq/dotfiles/tmux.conf.default ~/.tmux.conf
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
+echo "Bitte cd ~/.vim/bundle/YouCompleteMe"
+echo "sudo .install.py -all"
 echo "Bitte vim starten mit test.py und :PluginInstall ausführen"
 echo "vim wurde für YouCompleteMe mit /usr/lib/python3.5 kompiliert"
 echo "Dieses Script musste mit sudo gestartet werden"
