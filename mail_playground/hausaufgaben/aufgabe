@@ -1,0 +1,14 @@
+Netzwerkkommunikation
+•
+E-Mail
+•
+Aufgabe
+Schreiben Sie einen Konsolenbasierenden E-Mail Klienten
+für POP3 Konten
+• Erarbeiten Sie sich den Umgang mit IMAP4
+• Erweitern Sie Ihr Projekt um IMAP4 Konten
+•
+Menüführung
+• Hinzufügen, ändern, löschen, speichern von Kontodaten
+• Speichern der Userinformationen als Objekt (pickle)
+• Abfragen von E-Mails und Ausgabe einer Übersicht
