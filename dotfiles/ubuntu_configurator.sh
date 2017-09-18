@@ -1,4 +1,6 @@
 #!/bin/sh
+apt upgrade
+apt update
 apt install tmux, tree
 apt install libncurses5-dev libgnome2-dev libgnomeui-dev
 apt install libgtk2.0-dev libatk1.0-dev libbonoboui2-dev
@@ -33,9 +35,10 @@ cp ~/bbq/dotfiles/vimrc.default ~/.vimrc
 cp ~/bbq/dotfiles/tmux.conf.default ~/.tmux.conf
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
+echo "Bitte sudo vim test.py ausführen und :PluginInstall . Fehlermeldung ignorieren. Ziel ist, dass in ~/vim/bundle/ alle Plugins runtergeladen werden"
 echo "Bitte cd ~/.vim/bundle/YouCompleteMe"
-echo "sudo .install.py -all"
-echo "Bitte vim starten mit test.py und :PluginInstall ausführen"
+echo "sudo python3 install.py -all"
+echo "Bitte sudo vim starten mit test.py und :PluginInstall ausführen"
 echo "vim wurde für YouCompleteMe mit /usr/lib/python3.5 kompiliert"
 echo "Dieses Script musste mit sudo gestartet werden"
 
