@@ -9,3 +9,6 @@
 - erstelle für Jinja2 ein Template für den Output
 - binde den Output-Template in Flask ein
 
+# 2. Aufgabe 
+
+- erstelle und initiiere eine cls-Klasse und überschreibe ihre standardisierte Ausgabe durch einen clear screen
