@@ -12,14 +12,17 @@
 # 2. Aufgabe (lila)
 
 - erstelle und initiiere eine cls-Klasse und überschreibe ihre standardisierte Ausgabe durch einen clear screen
-- Setze pep8 und pep257 in allen Dateien um
+- Setze pep8 in allen Dateien um
 
 # 3. Aufgabe (türkis)
 
-- erstelle eine Funktion, die die Suchanfragen logged. Ignoriere Formatierung und human-readability 
-- erweitere Flask um ein /viewlog und escape html-tags wo nötig
-- Greife beim loggen auf das dir() der Requests zurück. 
-- Wähle für die nächste Version des loggers folgende Attribute aus: 'form', 'remote\_Addr', 'user\_agent', 'res' und Nutze die Pipe als Trennzeichen
-- [ab hier die Seiten 265ff. zu Aufgaben verarbeiten] 
+- erstelle eine Funktion, die die Suchanfragen in einer Textdatei loggedi (nimm das request-Objekt von Flask). 
+- erweitere Flask um ein /viewlog Funktionalität.
+- Nutze escape für html-tags wo nötig
+- Nutze das dir() des request-Objekts, um in einer neuen Version des loggers folgende Informationen zu sammeln:  
+	'form', 'remote_adr', 'user_agent' 
+- Nutze die Pipe als Trennzeichen
+- modifiziere /viewlog derart, dass die Log-entries in eine Liste von Listen konvertiert wird  
+- erstelle ein Jinja2-templae für das Einzeigen der Listei von Listen
  
 
