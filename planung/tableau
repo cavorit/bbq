@@ -1,0 +1,45 @@
+########################################## API GATEWAY #######################################################
+
+# must have
+
+- [ ] Ich kann eine Datenmatrix mit reelwertigen Elementen als JSON per http-Request an eine URL schicken und erhalte ein JSON zurück, dass auf dem Intervall [min, max] bzw. [0, 1] normiert die y-Werte eines Kerndichteschätzers mit Feinheit k=100 zurückgibt.  
+- besitzt die Datenmatrix mehr als eine Spalte, wird pro Spalte ein eigener Kerndichteschätzer zurückgegeben. 
+- die Spaltennamen des Kerndichteschätzers werden aus dem http-Request ermittelt
+
+# Operationalisierung
+
+def req_data(jsonstring:str) -> 'list of list':
+""" liest aus einer HTTP-Request die Daten aus und gibt sie als liste von listen zurück""" 
+
+def api_gateway() -> None: 
+""" wrapper für Flask """
+
+def support(x:[real], size:int = 100) -> x:[real] 
+""" Liefert die Trägersequenz auf x-Achse"""
+
+def kde(x):
+""" Berechnet auf dem Träger die KDE-Wert"""
+
+# Notizen
+
+
+# nice to have
+
+- die http-Requests werden in einer Logdatei gespeichert
+- die http-Requests werden in einer Datenbank gespeichert
+- das Logfile kann über den Browser inspiziert werden.
+- das Logfile kann über den Browser in Echtzeit inspiziert werden.
+- die Logfiles können nur per Passwort-Authentifizierung eingesehen werden
+- aus der Datenbank werden einige Monitoring-Werte herausgelesen (User-Statistiken, Zeitreihe der Anfragenhäufigkeit, Berechnungsdauer, ...)
+- die API wird mit Swagger dokumentiert
+- die API kann von der NASA eine andere API einbinden, z.B. von Satelitendaten
+- der API-Endpoint bzw. der statische Dienst (Modell) kann durch dynamische URL identifiziert werden.
+- es können andere API eingelesen werden, die OAuth verlangen
+- die API wird per Oauth zugängig gemacht und ein Toke muss bei jeder Request übergeben werden
+- die API wir threadfähig und gibt in einer Tabelle an, welche Berechnungen gerade laufen
+- der Dienst läuft unter https
+- es werden tägliche Statistiken per eMail an den Admin versandt.  
+- es werden tägliche Statistiken per SMS an den Admin versandt.
+- pep8 Konformität
+- Testgetriebene Entwicklung
+
