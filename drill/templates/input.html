@@ -1,0 +1,17 @@
+{% extends 'base.html'%}
+
+{% block body %}
+
+<form action='/evaluate' method='POST'>
+
+	<table>
+		<tr><td>Wort:</td><td><input type='TEXT' name='inputWord' length=40</td></tr>
+		<tr><td>Pattern:</td><td><input type='TEXT' name='inputPattern' value='aeiou'</td></tr>
+	</table>
+
+	<p> Bitte mach Deine Angaben. Wenn Du zufrieden bist, drücke "OK!" </p>
+	<input type='SUBMIT' value='OK!'>
+</form>	
+
+{% endblock %}
+

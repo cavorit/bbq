@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<table>
+	{% for req in dataframe %}
+	
+	<tr>
+		{% for item in req %}
+		
+		<td>
+			{{ item }}	
+		</td>
+
+		{% endfor%}
+		
+	</tr> 
+
+	{% endfor %}
+
+
+</table>	
+
+{% endblock %}
