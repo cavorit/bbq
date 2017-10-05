@@ -25,4 +25,19 @@
 - modifiziere /viewlog derart, dass die Log-entries in eine Liste von Listen konvertiert wird  
 - erstelle ein Jinja2-templae für das Einzeigen der Listei von Listen
  
+# 3. Aufgabe (rosa)
+
+- installiere eine SQLite Datenbank und erstelle dort eine Datenbank
+- erstelle einen SQL-String zur Erzeugung einer Datenbanktabelle mit 
+	- id
+	- timestamp
+	- wort
+	- pattern
+	- ip
+	- browser
+ 	- result
+- Erstelle einen Cursor und erzeuge die Tabelle.
+- Pflege in die Tabelle von Hand Einträge ein
+-  
+
 
