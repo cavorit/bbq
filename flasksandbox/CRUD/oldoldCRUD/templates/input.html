@@ -1,0 +1,12 @@
+<html>
+	<body>
+		<form action='/' method='POST'>
+			<input type='text' name='x'>
+			<input type='submit' value='ok'>
+		</form>
+		<h1> Books </h1>
+		{% for i in x %}
+		<p>{{ i.Titel }}</p>
+		{% endfor  %}
+	</body>
+</html>	

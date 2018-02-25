@@ -1,0 +1,20 @@
+<html>
+	<body>
+		<form method='POST' action='/'>
+			<input type='text' name='member'>
+			<input type='submit' value='OK'>
+		</form>
+
+		{% for i in member_list %}
+		<p> {{i.member}} </p>
+		<form method='POST' action='./update'>
+		  <input type='hidden' value={{i.member}} name= 'oldtitle'>
+		  <input type='text' value={{i.member}} name='newtitle'>
+		  <input type='submit' value='Update'>
+		</form>
+
+		{% endfor %}
+	</body>	
+</html>
+
+
