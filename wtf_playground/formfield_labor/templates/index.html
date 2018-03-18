@@ -1,0 +1,13 @@
+<html>
+	<body> 
+
+		<form action="{{ url_for('home') }}" method='POST'>
+		{{form.csrf_token}}			
+			{{ form.alpha.label }}
+			{{ form.alpha}}
+
+			<input type='submit' value='ok'>	
+		</form>
+	</body>
+</html>	
+
