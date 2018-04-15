@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0;" />
+		<style>
+    		img {
+      			background: white;
+      			border: 1px solid black;
+      			width: 20%;
+      			height: auto;
+    		}
+  		</style>
+	</head>
+	<body>
+		<form action="{{ url_for('my_flag') }}" method='post'> 
+		<table align='center'>
+		<tr> 	
+			<td align='center'> <input width='50%' type='image' name='flag_button' value='english' 
+				src= "{{ url_for('static', filename='gb.svg') }} " 
+				onmouseover="this.style.border = '10px solid #33cc33'" 
+				onmouseout="this.style.border = '10px solid #ffffff'">
+			</td>
+			<td align='center'> <input width='50%' type='image' name='flag_button' value='german'  
+				src= "{{ url_for('static', filename='de.svg') }} "
+				onmouseover="this.style.border = '10px solid #33cc33'" 
+				onmouseout="this.style.border = '10px solid #ffffff'">
+			
+			</td>
+		</tr>	
+		<table>	
+		</form>
+	
+	</body>	
+</html>	
